@@ -58,7 +58,14 @@
             @"AudioPlayerViewController",
             @"AUPlayerViewController",
             @"OpenGLRendererViewController",
-            @"VideoPlayerEnterViewController"
+            @"VideoPlayerEnterViewController",
+            @"AudioRecorderViewController",
+            @"VideoRecorderViewController",
+            @"FDKAACEncoderViewController",
+            @"AudioToolboxEncoderViewController",
+            @"VideoToolBoxEncoderViewController",
+            @"FFmpegDecoderViewController",
+            @"MP3EncoderViewController"
             
         ].mutableCopy;
     }
@@ -68,9 +75,16 @@
 + (NSDictionary *)routerDic {
     NSDictionary *dic = @{
         @"AudioPlayerViewController" : @"FFmpeg 解码 RemoteIO Unit音频播放",
-        @"AUPlayerViewController" : @"AudioFilePlayer Unit RemoteIO Unit 音频播放",
+        @"AUPlayerViewController" : @"AudioFilePlayer Unit音频播放",
         @"OpenGLRendererViewController" : @"OpenGL 渲染",
-        @"VideoPlayerEnterViewController" : @"视频播放器"
+        @"VideoPlayerEnterViewController" : @"视频播放器",
+        @"AudioRecorderViewController" : @"音频采集",
+        @"VideoRecorderViewController" : @"视频采集",
+        @"FDKAACEncoderViewController" : @"fdk_aac encoder音频编码",
+        @"AudioToolboxEncoderViewController" : @"AudioToolboxEncoder 音频编码",
+        @"VideoToolBoxEncoderViewController" : @"VideoToolBox .264编码",
+        @"FFmpegDecoderViewController" : @"ffmpeg 音频解码",
+        @"MP3EncoderViewController" : @"aac 编码 mp3"
     };
     return dic;
 }

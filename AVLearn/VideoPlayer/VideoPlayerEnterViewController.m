@@ -24,10 +24,15 @@ NSString * const MAX_BUFFERED_DURATION = @"Max Buffered Duration";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Changba Player";
+    
     _requestHeader = [NSMutableDictionary dictionary];
     _requestHeader[MIN_BUFFERED_DURATION] = @(1.0f);
     _requestHeader[MAX_BUFFERED_DURATION] = @(3.0f);
+    
+    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(10, 250, 300, 200)];
+    lab.text = @"点击展示";
+    lab.numberOfLines = 0;
+    [self.view addSubview:lab];
     // Do any additional setup after loading the view.
 }
 
