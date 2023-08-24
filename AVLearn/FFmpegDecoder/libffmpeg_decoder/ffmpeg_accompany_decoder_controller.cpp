@@ -1,4 +1,4 @@
-#include "accompany_decoder_controller.h"
+#include "ffmpeg_accompany_decoder_controller.h"
 
 #define LOG_TAG "FFMpegAccompanyDecoderController"
 

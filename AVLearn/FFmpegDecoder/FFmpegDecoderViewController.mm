@@ -6,7 +6,7 @@
 //
 
 #import "FFmpegDecoderViewController.h"
-#import "accompany_decoder_controller.h"
+#import "ffmpeg_accompany_decoder_controller.h"
 #import "CommonUtil.h"
 
 @interface FFmpegDecoderViewController ()

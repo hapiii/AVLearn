@@ -14,7 +14,7 @@
 		14657A7E2A4FFFC90059D1E3 /* problem.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 14657A7C2A4FFFC90059D1E3 /* problem.pcm */; };
 		14657A812A4FFFDB0059D1E3 /* AudioToolboxEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14657A802A4FFFDB0059D1E3 /* AudioToolboxEncoderViewController.m */; };
 		14657A852A500D080059D1E3 /* FFmpegDecoderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14657A842A500D080059D1E3 /* FFmpegDecoderViewController.mm */; };
-		14657A8C2A500E270059D1E3 /* accompany_decoder_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14657A8A2A500E270059D1E3 /* accompany_decoder_controller.cpp */; };
+		14657A8C2A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14657A8A2A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.cpp */; };
 		14657A902A5013120059D1E3 /* VideoToolBoxEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14657A8F2A5013120059D1E3 /* VideoToolBoxEncoderViewController.m */; };
 		14657A942A5017DF0059D1E3 /* MP3EncoderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14657A932A5017DF0059D1E3 /* MP3EncoderViewController.mm */; };
 		14657A9B2A5017FB0059D1E3 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14657A9A2A5017FB0059D1E3 /* libmp3lame.a */; };
@@ -33,9 +33,6 @@
 		14DF8BD52A4C336E00BC64F9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BD42A4C336E00BC64F9 /* BaseViewController.m */; };
 		14DF8BD82A4C33F500BC64F9 /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BD72A4C33F500BC64F9 /* AudioPlayerViewController.m */; };
 		14DF8BE02A4C349500BC64F9 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BDE2A4C349400BC64F9 /* CommonUtil.m */; };
-		14DF8BE42A4C34AD00BC64F9 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BE32A4C34AD00BC64F9 /* AudioOutput.m */; };
-		14DF8BEA2A4C34B500BC64F9 /* AVAudioSession+RouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BE62A4C34B500BC64F9 /* AVAudioSession+RouteUtils.m */; };
-		14DF8BEB2A4C34B500BC64F9 /* ELAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BE72A4C34B500BC64F9 /* ELAudioSession.m */; };
 		14DF8BEE2A4C34C600BC64F9 /* AudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BED2A4C34C600BC64F9 /* AudioPlayer.mm */; };
 		14DF8BF92A4C35C400BC64F9 /* packet_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BF22A4C35C400BC64F9 /* packet_pool.cpp */; };
 		14DF8BFA2A4C35C400BC64F9 /* accompany_decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8BF32A4C35C400BC64F9 /* accompany_decoder.cpp */; };
@@ -150,6 +147,9 @@
 		14DF8D8D2A4EE08800BC64F9 /* VideoRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DF8D8C2A4EE08800BC64F9 /* VideoRecorderViewController.m */; };
 		14DF8D8F2A4EE33F00BC64F9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DF8D8E2A4EE33F00BC64F9 /* Accelerate.framework */; };
 		14DF8DE32A4EECA500BC64F9 /* libffmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DF8DE22A4EECA500BC64F9 /* libffmpeg.a */; };
+		14F39B352A976B8E0035E971 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F39B342A976B8E0035E971 /* AudioOutput.m */; };
+		14F39B3B2A976BB30035E971 /* AVAudioSession+RouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F39B372A976BB30035E971 /* AVAudioSession+RouteUtils.m */; };
+		14F39B3C2A976BB30035E971 /* ELAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F39B382A976BB30035E971 /* ELAudioSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,8 +182,8 @@
 		14657A802A4FFFDB0059D1E3 /* AudioToolboxEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioToolboxEncoderViewController.m; sourceTree = "<group>"; };
 		14657A832A500D080059D1E3 /* FFmpegDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFmpegDecoderViewController.h; sourceTree = "<group>"; };
 		14657A842A500D080059D1E3 /* FFmpegDecoderViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FFmpegDecoderViewController.mm; sourceTree = "<group>"; };
-		14657A882A500E270059D1E3 /* accompany_decoder_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accompany_decoder_controller.h; sourceTree = "<group>"; };
-		14657A8A2A500E270059D1E3 /* accompany_decoder_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = accompany_decoder_controller.cpp; sourceTree = "<group>"; };
+		14657A882A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffmpeg_accompany_decoder_controller.h; sourceTree = "<group>"; };
+		14657A8A2A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ffmpeg_accompany_decoder_controller.cpp; sourceTree = "<group>"; };
 		14657A8E2A5013120059D1E3 /* VideoToolBoxEncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolBoxEncoderViewController.h; sourceTree = "<group>"; };
 		14657A8F2A5013120059D1E3 /* VideoToolBoxEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolBoxEncoderViewController.m; sourceTree = "<group>"; };
 		14657A922A5017DF0059D1E3 /* MP3EncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MP3EncoderViewController.h; sourceTree = "<group>"; };
@@ -217,12 +217,6 @@
 		14DF8BD72A4C33F500BC64F9 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
 		14DF8BDE2A4C349400BC64F9 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
 		14DF8BDF2A4C349400BC64F9 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
-		14DF8BE22A4C34AD00BC64F9 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
-		14DF8BE32A4C34AD00BC64F9 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
-		14DF8BE62A4C34B500BC64F9 /* AVAudioSession+RouteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+RouteUtils.m"; sourceTree = "<group>"; };
-		14DF8BE72A4C34B500BC64F9 /* ELAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAudioSession.m; sourceTree = "<group>"; };
-		14DF8BE82A4C34B500BC64F9 /* AVAudioSession+RouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+RouteUtils.h"; sourceTree = "<group>"; };
-		14DF8BE92A4C34B500BC64F9 /* ELAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAudioSession.h; sourceTree = "<group>"; };
 		14DF8BEC2A4C34C600BC64F9 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		14DF8BED2A4C34C600BC64F9 /* AudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioPlayer.mm; sourceTree = "<group>"; };
 		14DF8BF12A4C35C400BC64F9 /* packet_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packet_queue.h; sourceTree = "<group>"; };
@@ -491,6 +485,12 @@
 		14DF8DE02A4EECA500BC64F9 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		14DF8DE12A4EECA500BC64F9 /* swresample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swresample.h; sourceTree = "<group>"; };
 		14DF8DE22A4EECA500BC64F9 /* libffmpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffmpeg.a; sourceTree = "<group>"; };
+		14F39B332A976B8E0035E971 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		14F39B342A976B8E0035E971 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		14F39B372A976BB30035E971 /* AVAudioSession+RouteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+RouteUtils.m"; sourceTree = "<group>"; };
+		14F39B382A976BB30035E971 /* ELAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAudioSession.m; sourceTree = "<group>"; };
+		14F39B392A976BB30035E971 /* AVAudioSession+RouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+RouteUtils.h"; sourceTree = "<group>"; };
+		14F39B3A2A976BB30035E971 /* ELAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAudioSession.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,8 +559,8 @@
 		14657A862A500E270059D1E3 /* libffmpeg_decoder */ = {
 			isa = PBXGroup;
 			children = (
-				14657A8A2A500E270059D1E3 /* accompany_decoder_controller.cpp */,
-				14657A882A500E270059D1E3 /* accompany_decoder_controller.h */,
+				14657A8A2A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.cpp */,
+				14657A882A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.h */,
 			);
 			path = libffmpeg_decoder;
 			sourceTree = "<group>";
@@ -696,8 +696,8 @@
 				14DF8C552A4C386800BC64F9 /* 111.aac */,
 				14DF8BEC2A4C34C600BC64F9 /* AudioPlayer.h */,
 				14DF8BED2A4C34C600BC64F9 /* AudioPlayer.mm */,
-				14DF8BE52A4C34B500BC64F9 /* AudioSession */,
-				14DF8BE12A4C34AD00BC64F9 /* AudioOutput */,
+				14F39B362A976BB30035E971 /* AudioSession */,
+				14F39B322A976B8E0035E971 /* AudioOutput */,
 				14DF8BDD2A4C349400BC64F9 /* utils */,
 				14DF8BD62A4C33F500BC64F9 /* AudioPlayerViewController.h */,
 				14DF8BD72A4C33F500BC64F9 /* AudioPlayerViewController.m */,
@@ -712,28 +712,6 @@
 				14DF8BDF2A4C349400BC64F9 /* CommonUtil.h */,
 			);
 			path = utils;
-			sourceTree = "<group>";
-		};
-		14DF8BE12A4C34AD00BC64F9 /* AudioOutput */ = {
-			isa = PBXGroup;
-			children = (
-				14DF8BE22A4C34AD00BC64F9 /* AudioOutput.h */,
-				14DF8BE32A4C34AD00BC64F9 /* AudioOutput.m */,
-			);
-			name = AudioOutput;
-			path = "../../../pro/video_s/iOS-AudioPlayer/AudioPlayer/AudioOutput";
-			sourceTree = "<group>";
-		};
-		14DF8BE52A4C34B500BC64F9 /* AudioSession */ = {
-			isa = PBXGroup;
-			children = (
-				14DF8BE82A4C34B500BC64F9 /* AVAudioSession+RouteUtils.h */,
-				14DF8BE62A4C34B500BC64F9 /* AVAudioSession+RouteUtils.m */,
-				14DF8BE92A4C34B500BC64F9 /* ELAudioSession.h */,
-				14DF8BE72A4C34B500BC64F9 /* ELAudioSession.m */,
-			);
-			name = AudioSession;
-			path = "../../../pro/video_s/iOS-AudioPlayer/AudioPlayer/AudioSession";
 			sourceTree = "<group>";
 		};
 		14DF8BEF2A4C35B100BC64F9 /* Venders */ = {
@@ -1291,6 +1269,26 @@
 			path = libswresample;
 			sourceTree = "<group>";
 		};
+		14F39B322A976B8E0035E971 /* AudioOutput */ = {
+			isa = PBXGroup;
+			children = (
+				14F39B332A976B8E0035E971 /* AudioOutput.h */,
+				14F39B342A976B8E0035E971 /* AudioOutput.m */,
+			);
+			path = AudioOutput;
+			sourceTree = "<group>";
+		};
+		14F39B362A976BB30035E971 /* AudioSession */ = {
+			isa = PBXGroup;
+			children = (
+				14F39B372A976BB30035E971 /* AVAudioSession+RouteUtils.m */,
+				14F39B382A976BB30035E971 /* ELAudioSession.m */,
+				14F39B392A976BB30035E971 /* AVAudioSession+RouteUtils.h */,
+				14F39B3A2A976BB30035E971 /* ELAudioSession.h */,
+			);
+			path = AudioSession;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1465,19 +1463,18 @@
 				14DF8CA82A4C4BC500BC64F9 /* pngwtran.c in Sources */,
 				14DF8D552A4EE04E00BC64F9 /* ELImageCameraRenderer.m in Sources */,
 				14DF8D722A4EE06600BC64F9 /* CADebugMacros.cpp in Sources */,
-				14DF8BEB2A4C34B500BC64F9 /* ELAudioSession.m in Sources */,
 				14DF8D282A4EE04600BC64F9 /* publisher_rate_feed_back.cpp in Sources */,
 				14DF8CDD2A4DA3A900BC64F9 /* VideoDecoder.m in Sources */,
 				14DF8D2C2A4EE04600BC64F9 /* audio_encoder_adapter.cpp in Sources */,
 				14DF8D5A2A4EE04E00BC64F9 /* ELImageOutput.m in Sources */,
 				14DF8CA92A4C4BC500BC64F9 /* example.c in Sources */,
-				14DF8BEA2A4C34B500BC64F9 /* AVAudioSession+RouteUtils.m in Sources */,
 				14DF8CE32A4DA3A900BC64F9 /* ContrastEnhancerFilter.m in Sources */,
 				14DF8CC32A4C4BD900BC64F9 /* rgba_frame.cpp in Sources */,
 				14DF8BF92A4C35C400BC64F9 /* packet_pool.cpp in Sources */,
 				14DF8D242A4EE04600BC64F9 /* gearshift_box.cpp in Sources */,
 				14DF8D222A4EE04600BC64F9 /* publisher_statistics.cpp in Sources */,
 				14DF8CE72A4DA3B400BC64F9 /* ELVideoViewPlayerController.m in Sources */,
+				14F39B352A976B8E0035E971 /* AudioOutput.m in Sources */,
 				14DF8D272A4EE04600BC64F9 /* live_audio_packet_queue.cpp in Sources */,
 				14DF8D8D2A4EE08800BC64F9 /* VideoRecorderViewController.m in Sources */,
 				14DF8CB22A4C4BC500BC64F9 /* png.c in Sources */,
@@ -1505,14 +1502,16 @@
 				14DF8D252A4EE04600BC64F9 /* live_thread.cpp in Sources */,
 				14657A762A4F0C960059D1E3 /* FDKAACEncoderViewController.mm in Sources */,
 				14DF8C962A4C4BC500BC64F9 /* pngerror.c in Sources */,
+				14F39B3B2A976BB30035E971 /* AVAudioSession+RouteUtils.m in Sources */,
 				14DF8C5A2A4C433400BC64F9 /* AUPlayerViewController.m in Sources */,
 				14DF8CEF2A4DA41F00BC64F9 /* VideoPlayerEnterViewController.m in Sources */,
 				14DF8D652A4EE05800BC64F9 /* ELPushStreamViewController.mm in Sources */,
 				14DF8BFC2A4C35C400BC64F9 /* accompany_decoder_controller.cpp in Sources */,
-				14657A8C2A500E270059D1E3 /* accompany_decoder_controller.cpp in Sources */,
+				14657A8C2A500E270059D1E3 /* ffmpeg_accompany_decoder_controller.cpp in Sources */,
 				14DF8CB12A4C4BC500BC64F9 /* pngget.c in Sources */,
 				14DF8D212A4EE04600BC64F9 /* live_audio_packet_pool.cpp in Sources */,
 				14DF8D742A4EE06600BC64F9 /* CADebugPrintf.cpp in Sources */,
+				14F39B3C2A976BB30035E971 /* ELAudioSession.m in Sources */,
 				14DF8D8A2A4EE07100BC64F9 /* KTVAUGraphController.mm in Sources */,
 				14657A852A500D080059D1E3 /* FFmpegDecoderViewController.mm in Sources */,
 				14DF8B9C2A4C22B400BC64F9 /* AppDelegate.m in Sources */,
@@ -1531,7 +1530,6 @@
 				14DF8CB62A4C4BC500BC64F9 /* pngset.c in Sources */,
 				14657A7A2A4FFFBB0059D1E3 /* AudioToolboxEncoder.m in Sources */,
 				14DF8CE12A4DA3A900BC64F9 /* YUVFrameCopier.m in Sources */,
-				14DF8BE42A4C34AD00BC64F9 /* AudioOutput.m in Sources */,
 				14DF8D292A4EE04600BC64F9 /* live_video_packet_queue.cpp in Sources */,
 				14657A942A5017DF0059D1E3 /* MP3EncoderViewController.mm in Sources */,
 				14DF8D762A4EE06600BC64F9 /* CAHostTimeBase.cpp in Sources */,
